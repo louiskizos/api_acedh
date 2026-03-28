@@ -1,9 +1,0 @@
-django
-djangorestframework
-pyyaml
-requests
-django-cors-headers
-pillow
-djangorestframework
-djangorestframework-simplejwt
-
