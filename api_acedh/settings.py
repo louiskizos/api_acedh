@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-loubd4$31m5#9sgt(ghab((vv%xvi9azlmjex_m^!nu($n)hsf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
-    
+ALLOWED_HOSTS = ['api-acedh.onrender.com', '127.0.0.1', 'localhost'] 
 
 # Application definition
 
