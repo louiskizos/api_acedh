@@ -29,3 +29,86 @@ class PartenaireSerializer(serializers.ModelSerializer):
     class Meta:
         model = Partenaire
         fields = '__all__'
+
+
+class ActiviteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Activite
+        fields = '__all__'
+
+
+
+class GallerieSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Gallerie
+        fields = '__all__'
+
+
+
+class EnvironnementSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Environnement
+        fields = '__all__'
+
+
+
+class AccompagnementSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Accompagnement
+        fields = '__all__'
+
+
+
+class StatistiqueSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Statistique
+        fields = '__all__'
+
+
+
+class AdresseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Adresse
+        fields = '__all__'
+
+
+
+class ContactSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contact
+        fields = '__all__'
+
+
+
+class RessourceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Ressource
+        fields = '__all__'
+
+
+
+class Mail_listeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Mail_liste
+        fields = '__all__'
+
+
+
+class AproposSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Aprops
+        fields = '__all__'
+
+
+
+class ObjectifSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Objectif
+        fields = '__all__'
+
+
+
+class ProjetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Projet
+        fields = '__all__'

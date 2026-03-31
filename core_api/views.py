@@ -106,6 +106,30 @@ class TeamDeleteView(generics.DestroyAPIView):
     serializer_class = TeamSerializer
     lookup_field = 'id'
 
+# ======================== Activite  =================================
+
+
+class ActiviteCreateView(generics.CreateAPIView):
+    queryset = Activite.objects.all()
+    serializer_class = ActiviteSerializer
+
+
+class ActiviteListView(generics.ListAPIView):
+    queryset = Activite.objects.all()
+    serializer_class = ActiviteSerializer
+
+class ActiviteUpdateView(generics.UpdateAPIView):
+    queryset = Activite.objects.all()
+    serializer_class = ActiviteSerializer
+    lookup_field = 'id'
+
+class ActiviteDeleteView(generics.DestroyAPIView):
+    queryset = Activite.objects.all()
+    serializer_class = ActiviteSerializer
+    lookup_field = 'id'
+
+
+
 # ======================== Partenaire  =================================
 
 
@@ -127,3 +151,290 @@ class PartenaireDeleteView(generics.DestroyAPIView):
     queryset = Partenaire.objects.all()
     serializer_class = PartenaireSerializer
     lookup_field = 'id'
+    
+
+
+# ======================== Gallerie  =================================
+
+
+class GallerieCreateView(generics.CreateAPIView):
+    queryset = Gallerie.objects.all()
+    serializer_class = GallerieSerializer
+
+
+class GallerieListView(generics.ListAPIView):
+    queryset = Gallerie.objects.all()
+    serializer_class = GallerieSerializer
+
+class GallerieUpdateView(generics.UpdateAPIView):
+    queryset = Gallerie.objects.all()
+    serializer_class = GallerieSerializer
+    lookup_field = 'id'
+
+class GallerieDeleteView(generics.DestroyAPIView):
+    queryset = Gallerie.objects.all()
+    serializer_class = GallerieSerializer
+    lookup_field = 'id'
+    
+
+
+# ======================== Environnement  =================================
+
+
+class EnvironnementCreateView(generics.CreateAPIView):
+    queryset = Environnement.objects.all()
+    serializer_class = EnvironnementSerializer
+
+
+class EnvironnementListView(generics.ListAPIView):
+    queryset = Environnement.objects.all()
+    serializer_class = EnvironnementSerializer
+
+class EnvironnementUpdateView(generics.UpdateAPIView):
+    queryset = Environnement.objects.all()
+    serializer_class = EnvironnementSerializer
+    lookup_field = 'id'
+
+class EnvironnementDeleteView(generics.DestroyAPIView):
+    queryset = Environnement.objects.all()
+    serializer_class = EnvironnementSerializer
+    lookup_field = 'id'
+
+
+
+# ======================== Accompagnement  =================================
+
+
+class AccompagnementCreateView(generics.CreateAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+
+
+class AccompagnementListView(generics.ListAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+
+class AccompagnementUpdateView(generics.UpdateAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+    lookup_field = 'id'
+
+class AccompagnementDeleteView(generics.DestroyAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+    lookup_field = 'id'
+    
+
+
+# ======================== Statistique  =================================
+
+
+class StatistiqueCreateView(generics.CreateAPIView):
+    queryset = Statistique.objects.all()
+    serializer_class = StatistiqueSerializer
+
+
+class StatistiqueListView(generics.ListAPIView):
+    queryset = Statistique.objects.all()
+    serializer_class =StatistiqueSerializer
+
+class StatistiqueUpdateView(generics.UpdateAPIView):
+    queryset = Statistique.objects.all()
+    serializer_class = StatistiqueSerializer
+    lookup_field = 'id'
+
+class StatistiqueDeleteView(generics.DestroyAPIView):
+    queryset = Statistique.objects.all()
+    serializer_class = StatistiqueSerializer
+    lookup_field = 'id'
+    
+# ======================== Accompagnement  =================================
+
+
+class AccompagnementCreateView(generics.CreateAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+
+
+class AccompagnementListView(generics.ListAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+
+class AccompagnementUpdateView(generics.UpdateAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+    lookup_field = 'id'
+
+class AccompagnementDeleteView(generics.DestroyAPIView):
+    queryset = Accompagnement.objects.all()
+    serializer_class = AccompagnementSerializer
+    lookup_field = 'id'
+
+
+
+# ======================== Adresse  =================================
+
+
+class AdresseCreateView(generics.CreateAPIView):
+    queryset = Adresse.objects.all()
+    serializer_class = AdresseSerializer
+
+
+class AdresseListView(generics.ListAPIView):
+    queryset = Adresse.objects.all()
+    serializer_class = AdresseSerializer
+
+class AdresseUpdateView(generics.UpdateAPIView):
+    queryset = Adresse.objects.all()
+    serializer_class = AdresseSerializer
+    lookup_field = 'id'
+
+class AdresseDeleteView(generics.DestroyAPIView):
+    queryset = Adresse.objects.all()
+    serializer_class = AdresseSerializer
+    lookup_field = 'id'
+    
+
+
+# ======================== Contact  =================================
+
+
+class ContactCreateView(generics.CreateAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+
+
+class ContactListView(generics.ListAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+
+class ContactUpdateView(generics.UpdateAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+    lookup_field = 'id'
+
+class ContactDeleteView(generics.DestroyAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+    lookup_field = 'id'
+
+
+
+# ======================== Ressource  =================================
+
+
+class RessourceCreateView(generics.CreateAPIView):
+    queryset = Ressource.objects.all()
+    serializer_class = RessourceSerializer
+
+
+class RessourceListView(generics.ListAPIView):
+    queryset = Ressource.objects.all()
+    serializer_class = RessourceSerializer
+
+class RessourceUpdateView(generics.UpdateAPIView):
+    queryset = Ressource.objects.all()
+    serializer_class = RessourceSerializer
+    lookup_field = 'id'
+
+class RessourceDeleteView(generics.DestroyAPIView):
+    queryset = Ressource.objects.all()
+    serializer_class = RessourceSerializer
+    lookup_field = 'id'
+         
+
+
+# ======================== Mail_liste  =================================
+
+
+class Mail_listeCreateView(generics.CreateAPIView):
+    queryset = Mail_liste.objects.all()
+    serializer_class = Mail_listeSerializer
+
+
+class Mail_listeListView(generics.ListAPIView):
+    queryset = Mail_liste.objects.all()
+    serializer_class = Mail_listeSerializer
+
+class Mail_listeUpdateView(generics.UpdateAPIView):
+    queryset = Mail_liste.objects.all()
+    serializer_class = Mail_listeSerializer
+    lookup_field = 'id'
+
+class Mail_listeDeleteView(generics.DestroyAPIView):
+    queryset = Mail_liste.objects.all()
+    serializer_class = Mail_listeSerializer
+    lookup_field = 'id'
+         
+
+
+
+# ======================== Apropos  =================================
+
+
+class AproposCreateView(generics.CreateAPIView):
+    queryset = Aprops.objects.all()
+    serializer_class = AproposSerializer
+
+
+class AproposListView(generics.ListAPIView):
+    queryset = Aprops.objects.all()
+    serializer_class = AproposSerializer
+
+class AproposUpdateView(generics.UpdateAPIView):
+    queryset = Aprops.objects.all()
+    serializer_class = AproposSerializer
+    lookup_field = 'id'
+
+class AproposDeleteView(generics.DestroyAPIView):
+    queryset = Aprops.objects.all()
+    serializer_class = AproposSerializer
+    lookup_field = 'id'
+         
+
+# ======================== Objectif  =================================
+
+
+class ObjectifCreateView(generics.CreateAPIView):
+    queryset = Objectif.objects.all()
+    serializer_class = ObjectifSerializer
+
+
+class ObjectifListView(generics.ListAPIView):
+    queryset = Objectif.objects.all()
+    serializer_class = ObjectifSerializer
+
+class ObjectifUpdateView(generics.UpdateAPIView):
+    queryset = Objectif.objects.all()
+    serializer_class = ObjectifSerializer
+    lookup_field = 'id'
+
+class ObjectifDeleteView(generics.DestroyAPIView):
+    queryset = Objectif.objects.all()
+    serializer_class = ObjectifSerializer
+    lookup_field = 'id'
+         
+
+
+# ======================== Projet  =================================
+
+
+class ProjetCreateView(generics.CreateAPIView):
+    queryset = Projet.objects.all()
+    serializer_class = ProjetSerializer
+
+
+class ProjetListView(generics.ListAPIView):
+    queryset = Projet.objects.all()
+    serializer_class = ProjetSerializer
+
+class ProjetUpdateView(generics.UpdateAPIView):
+    queryset = Projet.objects.all()
+    serializer_class = ProjetSerializer
+    lookup_field = 'id'
+
+class ProjetDeleteView(generics.DestroyAPIView):
+    queryset = Projet.objects.all()
+    serializer_class = ProjetSerializer
+    lookup_field = 'id'
+      
