@@ -112,3 +112,18 @@ class ProjetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Projet
         fields = '__all__'
+
+
+
+class CommentaireSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Commentaire
+        fields = '__all__'
+
+
+
+
+class RapportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Rapport
+        fields = '__all__'

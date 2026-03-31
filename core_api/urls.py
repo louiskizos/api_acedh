@@ -130,4 +130,21 @@ urlpatterns = [
     path('projet/<int:id>/update/', ProjetUpdateView.as_view()),  
     path('projet/<int:id>/delete/', ProjetDeleteView.as_view()),
 
+
+    # ======================== Commentaire  =================================
+
+    path('commentaire/', CommentaireListView.as_view()),             
+    path('commentaire/create/', CommentaireCreateView.as_view()),    
+    path('commentaire/<int:id>/update/', CommentaireUpdateView.as_view()),  
+    path('commentaire/<int:id>/delete/', CommentaireDeleteView.as_view()),
+
+
+
+    # ======================== Rapport  =================================
+
+    path('rapport/', RapportListView.as_view()),             
+    path('rapport/create/', RapportCreateView.as_view()),    
+    path('rapport/<int:id>/update/', RapportUpdateView.as_view()),  
+    path('rapport/<int:id>/delete/', RapportDeleteView.as_view()),
+
 ]

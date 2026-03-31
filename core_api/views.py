@@ -438,3 +438,56 @@ class ProjetDeleteView(generics.DestroyAPIView):
     serializer_class = ProjetSerializer
     lookup_field = 'id'
       
+
+
+# ======================== Commentaire  =================================
+
+
+class CommentaireCreateView(generics.CreateAPIView):
+    queryset = Commentaire.objects.all()
+    serializer_class = CommentaireSerializer
+
+
+class CommentaireListView(generics.ListAPIView):
+    queryset = Commentaire.objects.all()
+    serializer_class = CommentaireSerializer
+
+class CommentaireUpdateView(generics.UpdateAPIView):
+    queryset = Commentaire.objects.all()
+    serializer_class = CommentaireSerializer
+    lookup_field = 'id'
+
+class CommentaireDeleteView(generics.DestroyAPIView):
+    queryset = Commentaire.objects.all()
+    serializer_class = CommentaireSerializer
+    lookup_field = 'id'
+
+
+
+
+# ======================== Rapport  =================================
+
+
+class RapportCreateView(generics.CreateAPIView):
+    queryset = Rapport.objects.all()
+    serializer_class = RapportSerializer
+
+
+class RapportListView(generics.ListAPIView):
+    queryset = Rapport.objects.all()
+    serializer_class = RapportSerializer
+
+class RapportUpdateView(generics.UpdateAPIView):
+    queryset = Rapport.objects.all()
+    serializer_class = RapportSerializer
+    lookup_field = 'id'
+
+class RapportDeleteView(generics.DestroyAPIView):
+    queryset = Rapport.objects.all()
+    serializer_class = RapportSerializer
+    lookup_field = 'id'
+
+
+
+
+      
