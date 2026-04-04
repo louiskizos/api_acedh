@@ -27,6 +27,10 @@ SECRET_KEY = 'django-insecure-loubd4$31m5#9sgt(ghab((vv%xvi9azlmjex_m^!nu($n)hsf
 DEBUG = True
 
 ALLOWED_HOSTS = ['api-acedh.onrender.com', '127.0.0.1', 'localhost'] 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://acedh-site.vercel.app/"
+]
 
 # Application definition
 
@@ -37,11 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'core_api',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
