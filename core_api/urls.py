@@ -5,6 +5,8 @@ from .views import *
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     # ============ LogIn et Register ============================
+
+    path('user/', UserListView.as_view()), 
     path('register/', RegisterView.as_view()), 
     path('login/', LoginView.as_view()),
     path('change-password/', ChangePasswordView.as_view()),

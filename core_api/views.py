@@ -83,6 +83,12 @@ class LogoutView(APIView):
         return Response({"Msg": "Successfully logged out."}, status=status.HTTP_200_OK)
     
 
+
+
+class UserListView(generics.ListAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
 # ======================== Fin  =================================
 
 # ======================== Team  =================================
