@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['api-acedh.onrender.com', '127.0.0.1', 'localhost'] 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "http://localhost:3001",
     "https://acedh-site.vercel.app"
 ]
 
