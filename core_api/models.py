@@ -19,6 +19,7 @@ class Team(models.Model):
 
 class Contact(models.Model):
     telephone = models.CharField(max_length=100)
+    message = models.TextField( default='Non renseigné')
     
     def __str__(self):
         return self.telephone
