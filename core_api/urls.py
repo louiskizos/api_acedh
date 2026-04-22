@@ -33,6 +33,8 @@ urlpatterns = [
     path('activite/create/', ActiviteCreateView.as_view()),    
     path('activite/<int:id>/update/', ActiviteUpdateView.as_view()),  
     path('activite/<int:id>/delete/', ActiviteDeleteView.as_view()),  
+    path('activite/<int:pk>/', ActiviteDetailView.as_view(), name='activite-detail'),
+
 
 
     # ======================== Gallerie  =================================
@@ -41,6 +43,7 @@ urlpatterns = [
     path('gallerie/create/', GallerieCreateView.as_view()),    
     path('gallerie/<int:id>/update/', GallerieUpdateView.as_view()),  
     path('gallerie/<int:id>/delete/', GallerieDeleteView.as_view()), 
+    path('gallerie/<int:projet_id>/gallerie_projet/', GallerieByProjetView.as_view(), name='projet-gallerie'),
 
     
     # ======================== Environnement  =================================

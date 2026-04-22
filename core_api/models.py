@@ -78,7 +78,8 @@ class Projet(models.Model):
         return self.titre
     
 class Rapport(models.Model):
-    projet = models.ForeignKey(Projet, on_delete=models.CASCADE)
+    projet = models.ForeignKey(Projet, on_delete=models.CASCADE,)
+    commentaire = models.TextField(default='Non renseigné')
     fichier_pdf = models.FileField(upload_to='rapports/')
     date_upload = models.DateTimeField(auto_now_add=True)
 
@@ -127,6 +128,7 @@ class Environnement(models.Model):
 
 
 class Gallerie(models.Model):
+    projet = models.ForeignKey(Projet, on_delete=models.CASCADE, default=None)
     detail_activite = models.TextField()
     photo = models.ImageField(upload_to='images/')
 

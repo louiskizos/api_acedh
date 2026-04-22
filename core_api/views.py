@@ -134,7 +134,9 @@ class ActiviteDeleteView(generics.DestroyAPIView):
     serializer_class = ActiviteSerializer
     lookup_field = 'id'
 
-
+class ActiviteDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Activite.objects.all()
+    serializer_class = ActiviteSerializer
 
 # ======================== Partenaire  =================================
 
@@ -181,7 +183,15 @@ class GallerieDeleteView(generics.DestroyAPIView):
     queryset = Gallerie.objects.all()
     serializer_class = GallerieSerializer
     lookup_field = 'id'
-    
+
+
+class GallerieByProjetView(generics.ListAPIView):
+    serializer_class = GallerieSerializer
+
+    def get_queryset(self):
+        
+        projet_id = self.kwargs['projet_id']
+        return Gallerie.objects.filter(projet_id=projet_id)   
 
 
 # ======================== Environnement  =================================
