@@ -45,6 +45,7 @@ class Mail_liste(models.Model):
     prenom = models.TextField()
     noms = models.TextField()
     mail = models.CharField(max_length=100)
+    message = models.TextField(default='Non renseigné')
 
     def __str__(self):
         return self.mail
