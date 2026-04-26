@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-loubd4$31m5#9sgt(ghab((vv%xvi9azlmjex_m^!nu($n)hsf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['api-acedh.onrender.com', '127.0.0.1', 'localhost'] 
 CORS_ALLOWED_ORIGINS = [
