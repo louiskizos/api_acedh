@@ -111,7 +111,7 @@ class Accompagnement(models.Model):
     titre = models.TextField()
     resume = models.TextField()
     photo = models.ImageField(upload_to='images/')
-
+    fichier_pdf = models.FileField(upload_to='accompagnement_pdfs/', null=True, blank=True)
     def __str__(self):
         return self.titre
   
@@ -122,7 +122,7 @@ class Environnement(models.Model):
     titre = models.TextField()
     resume = models.TextField()
     photo = models.ImageField(upload_to='images/')
-
+    fichier_pdf = models.FileField(upload_to='environnement_pdfs/', null=True, blank=True)
     def __str__(self):
         return self.titre
  
