@@ -111,7 +111,7 @@ class ObjectifSerializer(serializers.ModelSerializer):
 class ProjetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Projet
-        fields = ['id', 'titre']
+        fields = '__all__'
 
 
 
@@ -125,11 +125,12 @@ class CommentaireSerializer(serializers.ModelSerializer):
 
 class RapportSerializer(serializers.ModelSerializer):
     
-    titre = serializers.CharField(source='projet.titre', read_only=True)
+   # titre = serializers.CharField(source='projet.titre', read_only=True)
     
     class Meta:
         model = Rapport
-        fields = ['id', 'titre', 'fichier_pdf', 'date_upload']
+        fields = '__all__'
+        #['id', 'titre', 'fichier_pdf', 'date_upload']
 
 
 
