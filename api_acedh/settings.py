@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
 ]
-
+WHITENOISE_KEEP_FILES_ON_DEPLOY = True
 ROOT_URLCONF = 'api_acedh.urls'
 
 TEMPLATES = [
