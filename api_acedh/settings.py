@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-loubd4$31m5#9sgt(ghab((vv%xvi9azlmjex_m^!nu($n)hsf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['api-acedh.onrender.com', '127.0.0.1', 'localhost'] 
 CORS_ALLOWED_ORIGINS = [
@@ -59,6 +59,7 @@ MIDDLEWARE = [
     
 ]
 WHITENOISE_KEEP_FILES_ON_DEPLOY = True
+
 ROOT_URLCONF = 'api_acedh.urls'
 
 TEMPLATES = [
@@ -89,6 +90,18 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'acedh_db',
+#         'USER': 'winner_server',
+#         'PASSWORD': 'root',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+
 
 
 # Password validation
@@ -126,9 +139,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 
-
-# settings.py
-
 STATIC_URL = 'static/'
 # Ce dossier sera créé automatiquement à la racine de votre projet
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
@@ -143,8 +153,6 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-
 
 
 
