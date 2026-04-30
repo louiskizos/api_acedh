@@ -464,9 +464,14 @@ class CommentaireCreateView(generics.CreateAPIView):
     serializer_class = CommentaireSerializer
 
 
-class CommentaireListView(generics.ListAPIView):
-    queryset = Commentaire.objects.all()
+class CommentaireListView_id(generics.ListAPIView):
     serializer_class = CommentaireSerializer
+
+    def get_queryset(self):
+        
+        activite_id = self.kwargs['activite_id']
+        return Commentaire.objects.filter(article=activite_id)
+
 
 class CommentaireUpdateView(generics.UpdateAPIView):
     queryset = Commentaire.objects.all()

@@ -138,12 +138,10 @@ urlpatterns = [
 
     # ======================== Commentaire  =================================
 
-    path('commentaire/', CommentaireListView.as_view()),             
+    path('commentaire/<int:activite_id>/', CommentaireListView_id.as_view())  ,          
     path('commentaire/create/', CommentaireCreateView.as_view()),    
     path('commentaire/<int:id>/update/', CommentaireUpdateView.as_view()),  
     path('commentaire/<int:id>/delete/', CommentaireDeleteView.as_view()),
-
-
 
     # ======================== Rapport  =================================
 
